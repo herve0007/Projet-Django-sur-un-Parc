@@ -1,0 +1,9 @@
+{% extends 'AnimauxZone/base.html' %}
+{% block content %}
+         <center> <h2>{{messages}}</h2>
+        <form method="post" style="color: white;">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit"> Enregistrer</button>
+        </form> </center>
+{% endblock %}

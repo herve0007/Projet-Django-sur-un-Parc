@@ -1,0 +1,12 @@
+{% extends 'AnimauxZone/base.html' %}
+{% block content %}
+
+        <article class="animal">
+            <h2> <span style="color: red;">espèce:</span> {{animal.espece}}</h2>
+            <h2> <span style="color: red;">famille:</span> {{animal.famille}}</h2>
+            <h2> <span style="color: red;">Zone Coeur:</span> {{animal.zoneCoeur}}</h2>
+            <h2> <span style="color: red;">Detail sur {{animal.espece}}:</span> {{animal.texte|linebreaksbr}}</h2>
+
+        </article>
+
+{% endblock %}
